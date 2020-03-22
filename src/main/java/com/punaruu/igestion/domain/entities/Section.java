@@ -46,8 +46,17 @@ public class Section {
     private byte[] reglementInterieur;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "section")
+    @JsonIgnore
     private Set<Bureau> bureaux;
 
     @Version
     private LocalDateTime version;
+
+    private Bureau bureauActif {
+        Bureau bureau = new Bureau();
+
+        this.bureaux.forEach(bureau -> {
+            
+        });
+    }
 }

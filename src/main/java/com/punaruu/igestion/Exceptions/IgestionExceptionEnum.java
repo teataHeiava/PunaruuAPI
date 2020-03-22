@@ -5,7 +5,8 @@ public enum IgestionExceptionEnum {
     VALEUR_OBLIGATOIRE("Valeur obigatoire attendues"),
     ENREGISTREMENT_EXISTANT("Enregistrement déjà existant"),
     INSERT_ID_VERSION("ID ou Version interdite en insertion"),
-    ANOMALIE("Anomalies");
+    ANOMALIE("Anomalies"),
+    UNAUTHORIZED("Utilisateur non valide");
 
     String errorMessage;
 

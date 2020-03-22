@@ -7,6 +7,8 @@ import com.punaruu.igestion.domain.enumerations.DisciplineEnum;
 import com.punaruu.igestion.domain.enumerations.EnregistrerEnum;
 import com.punaruu.igestion.repositories.SectionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 

@@ -1,15 +1,13 @@
 package com.punaruu.igestion.domain.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.punaruu.igestion.domain.enumerations.FonctionBureauEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
@@ -18,10 +16,13 @@ import java.time.LocalDate;
 public class Dirigeant extends Personne {
 
     @Column(nullable =  false)
+    @Enumerated(EnumType.STRING)
     private FonctionBureauEnum fonction;
 
+    @JsonIgnore
     private String identifiant;
 
+    @JsonIgnore
     private String password;
 
     private LocalDate dateFin;

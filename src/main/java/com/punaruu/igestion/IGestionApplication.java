@@ -2,11 +2,8 @@ package com.punaruu.igestion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
-@ComponentScan(basePackages = "com.punaruu.igestion")
+@SpringBootApplication()
 public class IGestionApplication {
 
     public static void main(String[] args) {
