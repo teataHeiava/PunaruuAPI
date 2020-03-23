@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@CrossOrigin(allowCredentials = "true")
+@CrossOrigin(allowCredentials = "true", origins =  "*", allowedHeaders = "*")
 @RestController
 public class SectionController {
 

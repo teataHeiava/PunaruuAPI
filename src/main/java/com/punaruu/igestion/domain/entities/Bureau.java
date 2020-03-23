@@ -15,8 +15,10 @@ public class Bureau {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(nullable = false)
     private LocalDate dateElection;
 
+    @Column(nullable = false)
     private LocalDate dateFin;
 
     @ManyToOne

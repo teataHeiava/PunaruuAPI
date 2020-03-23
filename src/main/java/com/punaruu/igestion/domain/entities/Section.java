@@ -52,11 +52,4 @@ public class Section {
     @Version
     private LocalDateTime version;
 
-    private Bureau bureauActif {
-        Bureau bureau = new Bureau();
-
-        this.bureaux.forEach(bureau -> {
-            
-        });
-    }
 }
